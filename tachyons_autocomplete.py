@@ -7,9 +7,6 @@ tachyons_classes = [".cover",".contain",".bg-center",".bg-top",".bg-right",".bg-
 
 
 class TachyonsCompletions(sublime_plugin.EventListener):
-    """
-    Provide tag completions for Bootstrap elements and data-uk attributes
-    """
     def __init__(self):
 
         self.class_completions = [("%s \tTachyons Class" % s, s) for s in tachyons_classes]
